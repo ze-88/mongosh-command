@@ -7,7 +7,7 @@ load("<HOME_DIRECTORY>/.mongodb/mongosh/script/commands.js")
 ```
 
 ## run (mongosh):
-### showOp
+### showOp (show op list)
 start mongosh & execute :
 ```
 dbm.showOp()
@@ -22,7 +22,7 @@ output :
 |  241303115 | update  | q     | ****.****      | 00:00:00.005345  | ****         | (mongo-go-driver)  | **.**.***.***:****  | conn10375  | {"q":{"_id":"6594b7d450b72e622e2e709f"},"u":{"$set":{"itemIds":0...  |
 +------------+---------+-------+----------------+------------------+--------------+--------------------+---------------------+------------+----------------------------------------------------------------------+
 ```
-### showCst
+### showCst (show collection list)
 start mongosh & execute :
 ```
 dbm.showCst()
@@ -37,7 +37,7 @@ output :
 | test.test                                     |        2 | false    |              0 |          0.000 |          0.004 |             0.008 |                0 |       0.000 |
 +-----------------------------------------------+----------+----------+----------------+----------------+----------------+-------------------+------------------+-------------+
 ```
-### showIx
+### showIx (show index list)
 start mongosh & execute :
 ```
 dbm.showIx()
@@ -53,7 +53,7 @@ output :
 | prod-****-shard01-02:27017    | test.test              | _id_  | {}       |   0.020 | 660 ops (since 4 days)  | {"_id":1}  |
 +-------------------------------+------------------------+-------+----------+---------+-------------------------+------------+
 ```
-### showRst
+### showRst (show replica set status)
 start mongosh & execute :
 ```
 dbm.showRst()
@@ -66,7 +66,7 @@ output :
 [4] prod-****-shard01-03:27017: state=SECONDARY, up=396802, sync_from=2, delay=0
 ```
 
-### showRcf
+### showRcf (show replica set config)
 start mongosh & execute :
 ```
 dbm.showRcf()
